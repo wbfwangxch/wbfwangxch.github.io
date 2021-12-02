@@ -1,0 +1,261 @@
+body {
+    word-wrap: break-word
+}
+
+body, div, h1, h2, h4 {
+    margin: 0;
+    padding: 0
+}
+
+.things p {
+    padding: 0;
+    margin: 0
+}
+
+.things {
+    width: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.things .home-page {
+    height: 90%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    will-change: transform
+}
+
+.home-page {
+    padding: 42px 24px
+}
+
+@media screen and (max-width:767px) {
+    .things .home-page {
+        padding: 0px 24px
+    }
+}
+
+[class^=ant-]::-ms-clear, [class*=ant-]::-ms-clear {
+    display: none
+}
+
+[class^=ant-], [class*=ant-], [class^=ant-] *, [class*=ant-] *, [class^=ant-] *::before, [class*=ant-] *::before, [class^=ant-] *::after, [class*=ant-] *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html, body {
+    width: 100%;
+    height: 100%
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+body {
+    margin: 0;
+    color: #314659;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    background-color: #fff;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum'
+}
+
+h1, h2, h4 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    color: rgba(0, 0, 0, .85);
+    font-weight: 500
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em
+}
+
+b {
+    font-weight: bolder
+}
+
+a {
+    color: #2f54eb;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    -webkit-text-decoration-skip: objects
+}
+
+a:hover {
+    color: #597ef7
+}
+
+a:active {
+    color: #1d39c4
+}
+
+a:active, a:hover {
+    text-decoration: none;
+    outline: 0
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0
+}
+
+img {
+    vertical-align: middle;
+    border-style: none
+}
+
+a {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation
+}
+
+::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #2f54eb
+}
+
+::selection {
+    color: #fff;
+    background: #2f54eb
+}
+
+html {
+    --antd-wave-shadow-color: #2F54EB;
+    --scroll-bar: 0
+}
+
+.box-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap
+}
+
+.box-row::before, .box-row::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.w-col {
+    position: relative;
+    max-width: 100%;
+    min-height: 1px
+}
+
+.w-col-xs {
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%
+}
+
+@media(min-width:768px) {
+    .w-col-md {
+        display: block;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+}
+
+.thing-box {
+    background-color: white;
+    min-height: 720px
+}
+
+.thing-box .works-img-wrapper {
+    margin: 0 auto;
+    left: 0;
+    right: 0
+}
+
+.thing-box .works-img-wrapper .block {
+    margin-bottom: 24px
+}
+
+.thing-box .works-img-wrapper .block .works-block-content {
+    display: block;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid #e9e9e9;
+    transform: translateY(0);
+    transition: transform .3s cubic-bezier(.215, .61, .355, 1), box-shadow .3s cubic-bezier(.215, .61, .355, 1);
+    border: none;
+    color: #314659;
+    transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1), transform .3s cubic-bezier(.215, .61, .355, 1)
+}
+
+.thing-box .works-img-wrapper .block .works-block-content:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .15);
+    transform: translateY(-5px)
+}
+
+.thing-box .works-img-wrapper .block .works-block-content>span {
+    width: 100%;
+    height: 160px;
+    display: block;
+    background: #e9e9e9;
+    padding: 5%
+}
+
+.thing-box .works-img-wrapper .block .works-block-content p {
+    width: 100%;
+    line-height: 30px
+}
+
+.thing-box .works-img-wrapper .block .works-block-content:hover p {
+    bottom: 0
+}
+
+@media screen and (max-width:767px) {
+    .thing-box {
+        height: 2000px;
+        overflow: hidden
+    }
+}
+
+@supports(-moz-appearance:meterbar) and (background-blend-mode:difference, normal) {}
+
+@supports(-moz-appearance:meterbar) {}
